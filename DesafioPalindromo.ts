@@ -8,15 +8,15 @@ function palindrome(str: string) {
     return str === reversed;
 }
 
-if(item !== null){
+const isPalindrome = palindrome(item);
+
+if(isPalindrome){
     console.log("Esta palavra e/ou número é um palíndromo!")
     
  }else{
     console.log("Esta palavra e/ou número NÂO é um palíndromo!")
 }
 
-
-// EU CRIEI A FUNÇÃO PALINDROME MAS NÃO CHAMEI ELA 
-// readlineSync.question() sempre retorna uma string, mesmo que vazia "" - !== NULL SEMPRE SERÁ TRUE (operador de desigualdade estrita)
-// FALTA TRATAR NÚMEROS
+// Codigo com erro proposital
 // Falta normalizar a string (Remover espaços, deixar tudo minúsculo e remover acentos (opcional))
+// Erro dando com letra Maiuscula
